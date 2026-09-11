@@ -30,7 +30,7 @@ The 2026 records run through Sept. 1, 2026. They are not treated as a full year.
 
 ## Sources
 
-- TxDOT CRIS export: `data/raw/myexport_final.csv`
+- TxDOT CRIS export: `data/raw/myexport_final.csv` locally, or the `.part00` through `.part10` files when using the GitHub upload. The notebook automatically reconstructs the split export.
 - Saved CRIS query: `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry`
 - Census population estimates: `data/population_estimates.csv`
 - Census TIGER/Line 2020 tract boundaries: downloaded by the notebook
