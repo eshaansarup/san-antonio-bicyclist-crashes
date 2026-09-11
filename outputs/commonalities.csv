@@ -1,0 +1,17 @@
+topic,category,unit,count,denominator,share
+Intersection context,NON INTERSECTION,crashes,127,264,0.4810606060606061
+Intersection context,INTERSECTION,crashes,73,264,0.2765151515151515
+Intersection context,INTERSECTION RELATED,crashes,49,264,0.1856060606060606
+Intersection context,DRIVEWAY ACCESS,crashes,15,264,0.056818181818181816
+Helmet status,1 - NOT WORN,bicyclists,218,265,0.8226415094339623
+Helmet status,99 - UNKNOWN IF WORN,bicyclists,27,265,0.1018867924528302
+Helmet status,"2 - WORN, DAMAGED",bicyclists,13,265,0.04905660377358491
+Helmet status,"3 - WORN, NOT DAMAGED",bicyclists,4,265,0.01509433962264151
+Helmet status,"4 - WORN, UNK DAMAGE",bicyclists,3,265,0.011320754716981131
+Contributing-factor code,Failed to yield,crashes,36,264,0.13636363636363635
+Contributing-factor code,Driver inattention,crashes,28,264,0.10606060606060606
+Contributing-factor code,Disregard stop sign/light,crashes,20,264,0.07575757575757576
+Contributing-factor code,Speed-related code,crashes,9,264,0.03409090909090909
+Contributing-factor code,Alcohol/intoxication code,crashes,4,264,0.015151515151515152
+Contributing-factor code,Drug code,crashes,3,264,0.011363636363636364
+
