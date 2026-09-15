@@ -110,11 +110,11 @@ def main():
             ]
         ],
         how="left",
-        max_distance=300,
         distance_col="match_distance_ft",
     )
     joined["match_distance_ft"] = joined["match_distance_ft"].round(1)
-    joined["road_label"] = joined["fullname"].fillna(joined["name"])
+    joined["road_label"] = (joined["fullname"].astype("string")
+                             .fillna(joined["name"].astype("string")))
     joined["year"] = pd.to_numeric(joined["year"], errors="coerce")
 
     road_lengths = roads_projected[["segmentid", "geometry"]].copy()
