@@ -21,8 +21,8 @@ OUT.mkdir(exist_ok=True)
 DATA.mkdir(exist_ok=True)
 
 SERVICE = (
-    "https://services.arcgis.com/tNJpAOha4mODLkXz/arcgis/rest/services/"
-    "Transportation/FeatureServer/0/query"
+    "https://services.arcgis.com/0J4ZNc4NaTguvRy0/ArcGIS/rest/services/"
+    "OpenData/FeatureServer/66/query"
 )
 
 
@@ -30,16 +30,13 @@ def download_centerlines():
     """Download the official centerline layer in pages as GeoJSON."""
     features = []
     offset = 0
-    fields = (
-        "segmentid,streetid,fullname,name,street_class,shape__length,"
-        "lfrom,lto,rfrom,rto"
-    )
+    fields = "OBJECTID,STREET_NAM,STREET,SUFFIX,STDIR,STREET_FRO,STREET_TO,FUNCT_CLAS,LENGTH"
     while True:
         params = {
-            "where": "street_class NOT IN (5, 13, 16)",
+            "where": "1=1",
             "outFields": fields,
             "returnGeometry": "true",
-            "outSR": "102463",
+            "outSR": "2279",
             "f": "geojson",
             "resultOffset": offset,
             "resultRecordCount": 1000,
@@ -52,7 +49,10 @@ def download_centerlines():
         if len(page_features) < 1000:
             break
         offset += len(page_features)
-    return gpd.GeoDataFrame.from_features(features, crs="ESRI:102463")
+    roads = gpd.GeoDataFrame.from_features(features, crs="EPSG:2279")
+    return roads.rename(columns={"OBJECTID": "segmentid", "STREET_NAM": "road_label",
+                                 "STREET_FRO": "from_street", "STREET_TO": "to_street",
+                                 "FUNCT_CLAS": "road_class"})
 
 
 def load_crashes():
@@ -92,20 +92,17 @@ def load_crashes():
 def main():
     roads = download_centerlines()
     crashes = load_crashes()
-    roads_projected = roads.to_crs(2278)
-    crashes_projected = crashes.to_crs(2278)
+    roads_projected = roads
+    crashes_projected = crashes.to_crs(2279)
     joined = gpd.sjoin_nearest(
         crashes_projected,
         roads_projected[
             [
                 "segmentid",
-                "fullname",
-                "name",
-                "street_class",
-                "lfrom",
-                "lto",
-                "rfrom",
-                "rto",
+                "road_label",
+                "from_street",
+                "to_street",
+                "road_class",
                 "geometry",
             ]
         ],
@@ -113,8 +110,6 @@ def main():
         distance_col="match_distance_ft",
     )
     joined["match_distance_ft"] = joined["match_distance_ft"].round(1)
-    joined["road_label"] = (joined["fullname"].astype("string")
-                             .fillna(joined["name"].astype("string")))
     joined["year"] = pd.to_numeric(joined["year"], errors="coerce")
 
     road_lengths = roads_projected[["segmentid", "geometry"]].copy()
@@ -132,11 +127,9 @@ def main():
                 [
                     "segmentid",
                     "road_label",
-                    "street_class",
-                    "lfrom",
-                    "lto",
-                    "rfrom",
-                    "rto",
+                    "from_street",
+                    "to_street",
+                    "road_class",
                     "length_miles",
                 ],
                 dropna=False,
