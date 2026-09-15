@@ -1,0 +1,159 @@
+street,location_note,lat_cell,lon_cell,crashes,deaths,serious_injuries,first_year,last_year
+EVERS RD,approximate half-mile map cell; raw count,29.485,-98.598,2,1,1,2024,2025
+HUEBNER RD,approximate half-mile map cell; raw count,29.52,-98.604,2,1,1,2017,2021
+W COMMERCE ST,approximate half-mile map cell; raw count,29.43,-98.562,2,1,1,2023,2025
+AUSTIN HWY,approximate half-mile map cell; raw count,29.505,-98.412,2,0,2,2018,2022
+CULEBRA RD,approximate half-mile map cell; raw count,29.445,-98.598,2,0,2,2021,2022
+FREDERICKSBURG RD,approximate half-mile map cell; raw count,29.46,-98.526,2,0,2,2017,2022
+MCCULLOUGH AVE,approximate half-mile map cell; raw count,29.43,-98.49,2,0,2,2023,2024
+S ALAMO ST,approximate half-mile map cell; raw count,29.41,-98.496,2,0,2,2017,2018
+BASSE RD,approximate half-mile map cell; raw count,29.485,-98.496,1,1,0,2022,2022
+CASTROVILLE RD,approximate half-mile map cell; raw count,29.415,-98.562,1,1,0,2023,2023
+CULEBRA RD,approximate half-mile map cell; raw count,29.475,-98.664,1,1,0,2022,2022
+DENVER BLVD,approximate half-mile map cell; raw count,29.4,-98.472,1,1,0,2017,2017
+DRESDEN DR,approximate half-mile map cell; raw count,29.495,-98.514,1,1,0,2019,2019
+E HOUSTON ST,approximate half-mile map cell; raw count,29.425,-98.466,1,1,0,2019,2019
+ENRIQUE M BARRERA PKWY,approximate half-mile map cell; raw count,29.41,-98.61,1,1,0,2022,2022
+FRIO CITY RD,approximate half-mile map cell; raw count,29.395,-98.532,1,1,0,2025,2025
+FRIO CITY RD,approximate half-mile map cell; raw count,29.4,-98.526,1,1,0,2018,2018
+HICKS AVE,approximate half-mile map cell; raw count,29.39,-98.466,1,1,0,2018,2018
+INGRAM RD,approximate half-mile map cell; raw count,29.465,-98.61,1,1,0,2016,2016
+N GENERAL MCMULLEN DR,approximate half-mile map cell; raw count,29.43,-98.556,1,1,0,2016,2016
+N HACKBERRY ST,approximate half-mile map cell; raw count,29.43,-98.478,1,1,0,2016,2016
+N NEW BRAUNFELS AVE,approximate half-mile map cell; raw count,29.43,-98.466,1,1,0,2017,2017
+N ZARZAMORA ST,approximate half-mile map cell; raw count,29.445,-98.526,1,1,0,2024,2024
+NW 24TH ST,approximate half-mile map cell; raw count,29.44,-98.544,1,1,0,2020,2020
+OCONNOR RD,approximate half-mile map cell; raw count,29.555,-98.388,1,1,0,2025,2025
+PA1502,approximate half-mile map cell; raw count,29.545,-98.388,1,1,0,2021,2021
+ROLAND RD,approximate half-mile map cell; raw count,29.395,-98.436,1,1,0,2023,2023
+S GENERAL MCMULLEN DR,approximate half-mile map cell; raw count,29.405,-98.562,1,1,0,2021,2021
+S GENERAL MCMULLEN DR,approximate half-mile map cell; raw count,29.425,-98.556,1,1,0,2023,2023
+S ROSILLO ST,approximate half-mile map cell; raw count,29.42,-98.532,1,1,0,2022,2022
+SOMERSET RD,approximate half-mile map cell; raw count,29.35,-98.556,1,1,0,2018,2018
+W COMMERCE ST,approximate half-mile map cell; raw count,29.435,-98.604,1,1,0,2018,2018
+W OLD US 90,approximate half-mile map cell; raw count,29.425,-98.568,1,1,0,2025,2025
+W OLD US 90,approximate half-mile map cell; raw count,29.43,-98.568,1,1,0,2024,2024
+W OLD US HIGHWAY 90,approximate half-mile map cell; raw count,29.41,-98.61,1,1,1,2016,2016
+WEST AVE,approximate half-mile map cell; raw count,29.485,-98.526,1,1,0,2021,2021
+ADAMS HILL DR,approximate half-mile map cell; raw count,29.405,-98.67,1,0,1,2022,2022
+AMIRES PL,approximate half-mile map cell; raw count,29.435,-98.58,1,0,1,2018,2018
+APPLE VALLEY DR,approximate half-mile map cell; raw count,29.355,-98.628,1,0,1,2024,2024
+BABCOCK RD,approximate half-mile map cell; raw count,29.495,-98.58,1,0,1,2016,2016
+BETTY LEVY,approximate half-mile map cell; raw count,29.43,-98.628,1,0,1,2024,2024
+BOLING BROOK DR,approximate half-mile map cell; raw count,29.42,-98.676,1,0,1,2019,2019
+BROOKLYN AVE,approximate half-mile map cell; raw count,29.425,-98.484,1,0,1,2017,2017
+CALLAGHAN RD,approximate half-mile map cell; raw count,29.495,-98.568,1,0,1,2024,2024
+CAMDEN ST,approximate half-mile map cell; raw count,29.435,-98.49,1,0,1,2021,2021
+CAPITAL ST,approximate half-mile map cell; raw count,29.465,-98.514,1,0,1,2019,2019
+CAROLYN ST,approximate half-mile map cell; raw count,29.4,-98.538,1,0,1,2021,2021
+CASTROVILLE RD,approximate half-mile map cell; raw count,29.41,-98.568,1,0,1,2017,2017
+CLUBHOUSE BLVD,approximate half-mile map cell; raw count,29.295,-98.478,1,0,1,2024,2024
+CROSSWINDS WAY,approximate half-mile map cell; raw count,29.545,-98.376,1,0,1,2024,2024
+CULEBRA RD,approximate half-mile map cell; raw count,29.445,-98.586,1,0,1,2016,2016
+DAWSON ST,approximate half-mile map cell; raw count,29.425,-98.46,1,0,1,2019,2019
+DE ZAVALA RD,approximate half-mile map cell; raw count,29.56,-98.604,1,0,1,2022,2022
+DEERWOOD DR,approximate half-mile map cell; raw count,29.49,-98.436,1,0,1,2024,2024
+DOLLARHIDE AVE,approximate half-mile map cell; raw count,29.365,-98.442,1,0,1,2018,2018
+E CEVALLOS,approximate half-mile map cell; raw count,29.405,-98.502,1,0,1,2017,2017
+E COMMERCE ST,approximate half-mile map cell; raw count,29.42,-98.49,1,0,1,2023,2023
+E CYPRESS ST,approximate half-mile map cell; raw count,29.44,-98.496,1,0,1,2025,2025
+E EVERGREEN ST,approximate half-mile map cell; raw count,29.44,-98.496,1,0,1,2022,2022
+E HOUSTON ST,approximate half-mile map cell; raw count,29.425,-98.496,1,0,1,2018,2018
+E HOUSTON ST,approximate half-mile map cell; raw count,29.425,-98.49,1,0,1,2024,2024
+E PYRON RD,approximate half-mile map cell; raw count,29.36,-98.496,1,0,1,2016,2016
+E RECTOR DR,approximate half-mile map cell; raw count,29.515,-98.49,1,0,1,2023,2023
+E SOUTHCROSS BLVD,approximate half-mile map cell; raw count,29.37,-98.484,1,0,1,2024,2024
+EISENHAUER RD,approximate half-mile map cell; raw count,29.495,-98.394,1,0,1,2025,2025
+ENRIQUE M BARRERA PKWY,approximate half-mile map cell; raw count,29.425,-98.574,1,0,1,2024,2024
+EVERS RD,approximate half-mile map cell; raw count,29.48,-98.592,1,0,1,2016,2016
+FAIR AVE,approximate half-mile map cell; raw count,29.38,-98.472,1,0,1,2023,2023
+FAIRMEADOWS LN,approximate half-mile map cell; raw count,29.335,-98.562,1,0,1,2022,2022
+FIVE PALMS DR,approximate half-mile map cell; raw count,29.335,-98.604,1,0,1,2022,2022
+FRAN FRAN ST,approximate half-mile map cell; raw count,29.395,-98.532,1,0,1,2021,2021
+FREDERICKSBURG RD,approximate half-mile map cell; raw count,29.45,-98.52,1,0,1,2016,2016
+FREDERICKSBURG RD,approximate half-mile map cell; raw count,29.475,-98.544,1,0,1,2024,2024
+FRESNO,approximate half-mile map cell; raw count,29.47,-98.52,1,0,1,2016,2016
+FRESNO ST,approximate half-mile map cell; raw count,29.47,-98.508,1,0,1,2016,2016
+HAYS ST,approximate half-mile map cell; raw count,29.43,-98.478,1,0,1,2025,2025
+HEARTLAND DR,approximate half-mile map cell; raw count,29.585,-98.382,1,0,1,2017,2017
+HEATHRIDGE,approximate half-mile map cell; raw count,29.51,-98.694,1,0,1,2022,2022
+HICKMAN,approximate half-mile map cell; raw count,29.445,-98.508,1,0,1,2018,2018
+HORIZON HILL BLVD,approximate half-mile map cell; raw count,29.51,-98.562,1,0,1,2023,2023
+JONES MALTSBERGER RD,approximate half-mile map cell; raw count,29.555,-98.466,1,0,1,2024,2024
+LAMAR ST,approximate half-mile map cell; raw count,29.43,-98.454,1,0,1,2022,2022
+LEE HALL ST,approximate half-mile map cell; raw count,29.475,-98.52,1,0,1,2017,2017
+LES HARRISON DR,approximate half-mile map cell; raw count,29.49,-98.694,1,0,1,2022,2022
+LORENE LN,approximate half-mile map cell; raw count,29.525,-98.502,1,0,1,2024,2024
+MARTIN LUTHER KING DR,approximate half-mile map cell; raw count,29.41,-98.436,1,0,1,2021,2021
+MEDICAL DR,approximate half-mile map cell; raw count,29.515,-98.568,1,0,1,2017,2017
+MIDCROWN DR,approximate half-mile map cell; raw count,29.505,-98.382,1,0,1,2023,2023
+MISSION RD,approximate half-mile map cell; raw count,29.335,-98.466,1,0,1,2020,2020
+MISSION RD,approximate half-mile map cell; raw count,29.365,-98.49,1,0,1,2016,2016
+MOUNTAIN STAR,approximate half-mile map cell; raw count,29.44,-98.676,1,0,1,2018,2018
+N FLORES ST,approximate half-mile map cell; raw count,29.44,-98.508,1,0,1,2017,2017
+N GENERAL MCMULLEN DR,approximate half-mile map cell; raw count,29.435,-98.556,1,0,1,2022,2022
+N GENERAL MCMULLEN DR,approximate half-mile map cell; raw count,29.445,-98.556,1,0,1,2019,2019
+N HACKBERRY,approximate half-mile map cell; raw count,29.435,-98.478,1,0,1,2016,2016
+N MAIN AVE,approximate half-mile map cell; raw count,29.435,-98.496,1,0,1,2020,2020
+N MAIN AVE,approximate half-mile map cell; raw count,29.44,-98.496,1,0,1,2019,2019
+N NEW BRAUNFELS AVE,approximate half-mile map cell; raw count,29.51,-98.46,1,0,1,2017,2017
+N PALMETTO ST,approximate half-mile map cell; raw count,29.425,-98.466,1,0,1,2024,2024
+NACOGDOCHES RD,approximate half-mile map cell; raw count,29.515,-98.454,1,0,1,2018,2018
+NEWELL AVE,approximate half-mile map cell; raw count,29.44,-98.484,1,0,1,2024,2024
+NW 38TH ST,approximate half-mile map cell; raw count,29.435,-98.58,1,0,1,2023,2023
+OCONNOR RD,approximate half-mile map cell; raw count,29.545,-98.376,1,0,1,2022,2022
+OCONNOR RD,approximate half-mile map cell; raw count,29.56,-98.388,1,0,1,2023,2023
+OLD CORPUS CHRISTI RD,approximate half-mile map cell; raw count,29.325,-98.424,1,0,1,2016,2016
+PA1502,approximate half-mile map cell; raw count,29.54,-98.424,1,0,1,2022,2022
+PERRIN BEITEL RD,approximate half-mile map cell; raw count,29.525,-98.412,1,0,1,2017,2017
+PICKWELL DR,approximate half-mile map cell; raw count,29.36,-98.43,1,0,1,2020,2020
+PLEASANTON RD,approximate half-mile map cell; raw count,29.34,-98.508,1,0,1,2024,2024
+PLEASANTON RD,approximate half-mile map cell; raw count,29.355,-98.508,1,0,1,2023,2023
+PLEASANTON RD,approximate half-mile map cell; raw count,29.36,-98.508,1,0,1,2017,2017
+PLEASANTON RD,approximate half-mile map cell; raw count,29.365,-98.508,1,0,1,2017,2017
+QUINTANA RD,approximate half-mile map cell; raw count,29.37,-98.556,1,0,1,2023,2023
+RAY ELLISON BLVD,approximate half-mile map cell; raw count,29.355,-98.616,1,0,1,2024,2024
+REED RD,approximate half-mile map cell; raw count,29.46,-98.646,1,0,1,2017,2017
+RITTIMAN RD,approximate half-mile map cell; raw count,29.48,-98.382,1,0,1,2017,2017
+RIVAS ST,approximate half-mile map cell; raw count,29.435,-98.532,1,0,1,2024,2024
+ROBINHOOD PL,approximate half-mile map cell; raw count,29.495,-98.454,1,0,1,2016,2016
+S ACME RD,approximate half-mile map cell; raw count,29.42,-98.592,1,0,1,2017,2017
+S FLORES ST,approximate half-mile map cell; raw count,29.35,-98.49,1,0,1,2025,2025
+S FLORES ST,approximate half-mile map cell; raw count,29.365,-98.496,1,0,1,2017,2017
+S FLORES ST,approximate half-mile map cell; raw count,29.375,-98.502,1,0,1,2020,2020
+S FLORES ST,approximate half-mile map cell; raw count,29.395,-98.508,1,0,1,2017,2017
+S GENERAL MCMULLEN DR,approximate half-mile map cell; raw count,29.42,-98.556,1,0,1,2019,2019
+S NEW BRAUNFELS AVE,approximate half-mile map cell; raw count,29.4,-98.466,1,0,1,2023,2023
+S SAN GABRIEL AVE,approximate half-mile map cell; raw count,29.425,-98.562,1,0,1,2024,2024
+S TRINITY ST,approximate half-mile map cell; raw count,29.415,-98.52,1,0,1,2021,2021
+S WW WHITE RD,approximate half-mile map cell; raw count,29.4,-98.406,1,0,1,2025,2025
+S ZARZAMORA ST,approximate half-mile map cell; raw count,29.385,-98.538,1,0,1,2019,2019
+SAN FERNANDO ST,approximate half-mile map cell; raw count,29.42,-98.526,1,0,1,2023,2023
+SAN PEDRO AVE,approximate half-mile map cell; raw count,29.455,-98.502,1,0,1,2024,2024
+SAN PEDRO AVE,approximate half-mile map cell; raw count,29.46,-98.502,1,0,1,2023,2023
+SANTIAGO ST,approximate half-mile map cell; raw count,29.415,-98.538,1,0,1,2016,2016
+SOLEDAD ST,approximate half-mile map cell; raw count,29.425,-98.496,1,0,1,2024,2024
+SOUTHTON RD,approximate half-mile map cell; raw count,29.28,-98.4,1,0,1,2024,2024
+ST CHARLES ST,approximate half-mile map cell; raw count,29.43,-98.466,1,0,1,2016,2016
+SW 19TH ST,approximate half-mile map cell; raw count,29.41,-98.544,1,0,1,2018,2018
+TIMBER PATH,approximate half-mile map cell; raw count,29.48,-98.658,1,0,1,2022,2022
+UHR LN,approximate half-mile map cell; raw count,29.555,-98.412,1,0,1,2025,2025
+UTSA BLVD,approximate half-mile map cell; raw count,29.575,-98.634,1,0,1,2022,2022
+UTSA BLVD,approximate half-mile map cell; raw count,29.575,-98.604,1,0,1,2021,2021
+W COMMERCE ST,approximate half-mile map cell; raw count,29.425,-98.55,1,0,1,2023,2023
+W COMMERCE ST,approximate half-mile map cell; raw count,29.425,-98.544,1,0,1,2022,2022
+W COMMERCE ST,approximate half-mile map cell; raw count,29.425,-98.514,1,0,1,2019,2019
+W COMMERCE ST,approximate half-mile map cell; raw count,29.43,-98.592,1,0,1,2016,2016
+W HARDING BLVD,approximate half-mile map cell; raw count,29.35,-98.526,1,0,1,2022,2022
+W HAUSMAN RD,approximate half-mile map cell; raw count,29.57,-98.64,1,0,1,2017,2017
+W HAUSMAN RD,approximate half-mile map cell; raw count,29.57,-98.622,1,0,1,2025,2025
+W HILDEBRAND AVE,approximate half-mile map cell; raw count,29.465,-98.514,1,0,1,2018,2018
+W MAGNOLIA AVE,approximate half-mile map cell; raw count,29.45,-98.502,1,0,1,2019,2019
+W MAYFIELD BLVD,approximate half-mile map cell; raw count,29.36,-98.544,1,0,1,2019,2019
+W MAYFIELD BLVD,approximate half-mile map cell; raw count,29.36,-98.538,1,0,1,2017,2017
+W OLMOS DR,approximate half-mile map cell; raw count,29.47,-98.508,1,0,1,2017,2017
+W SOUTHCROSS BLVD,approximate half-mile map cell; raw count,29.365,-98.514,1,0,1,2020,2020
+W WOODLAWN AVE,approximate half-mile map cell; raw count,29.45,-98.532,1,0,1,2020,2020
+W WOODLAWN AVE,approximate half-mile map cell; raw count,29.455,-98.538,1,0,1,2018,2018
+WHITMAN AVE,approximate half-mile map cell; raw count,29.36,-98.532,1,0,1,2018,2018
+WILSON BLVD,approximate half-mile map cell; raw count,29.445,-98.544,1,0,1,2017,2017
