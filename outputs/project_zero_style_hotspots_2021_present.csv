@@ -1,0 +1,4 @@
+segmentid,road_label,from_street,to_street,length_miles,crashes,deaths,serious_injuries,first_year,last_year,affected_bicyclists
+4278,AUSTIN HWY,TBD,TBD,0.5882149153277272,2,0,2,2022,2023,2
+8820,CULEBRA RD,MIRA VISTA,BRIDGE,0.1929387363053979,2,0,2,2021,2022,2
+36884,S ROSILLO,BUENA VISTA ST,MONTEREY ST,0.07436182406851076,1,0,2,2026,2026,2
