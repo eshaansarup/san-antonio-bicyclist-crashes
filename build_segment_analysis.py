@@ -39,7 +39,7 @@ def download_centerlines():
             "where": "street_class NOT IN (5, 13, 16)",
             "outFields": fields,
             "returnGeometry": "true",
-            "outSR": "4326",
+            "outSR": "102463",
             "f": "geojson",
             "resultOffset": offset,
             "resultRecordCount": 1000,
@@ -52,7 +52,7 @@ def download_centerlines():
         if len(page_features) < 1000:
             break
         offset += len(page_features)
-    return gpd.GeoDataFrame.from_features(features, crs="EPSG:4326")
+    return gpd.GeoDataFrame.from_features(features, crs="ESRI:102463")
 
 
 def load_crashes():
