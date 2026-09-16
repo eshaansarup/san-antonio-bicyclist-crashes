@@ -14,6 +14,7 @@ The notebook covers:
 
 - San Antonio year-over-year serious injuries and deaths;
 - comparison with Houston, Austin, Dallas, Fort Worth and El Paso;
+- comparison with the 20 largest Texas cities, using raw counts and rates per 1 million residents;
 - population-adjusted rates for the 2024–Sept. 1, 2026 reporting window, using the average 2024–2025 population because no 2026 estimate is available;
 - Census tract hotspots;
 - San Antonio City Council districts; and
