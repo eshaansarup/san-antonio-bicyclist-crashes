@@ -23,6 +23,10 @@ The notebook covers:
 - common features of the severe-injury and fatal crashes, including intersection context, helmet status and contributing-factor codes; and
 - a 2024–Sept. 1, 2026 reporting-window update, matching the latest CRIS records.
 
+## Publish charts to Datawrapper
+
+Run `publish_datawrapper_charts.ipynb` after running the main analysis notebook. It prompts for a Datawrapper API token, finds the San Antonio folder (or lets you enter its folder ID), creates three charts, publishes them and prints their URLs. The token is not stored in the notebook.
+
 ## Definitions
 
 The CRIS export was built with person-level filters:
