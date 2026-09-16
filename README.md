@@ -1,10 +1,14 @@
 # San Antonio bicyclist crash analysis
 
-Reproducible analysis of Texas CRIS records for pedalcyclists killed or suspected seriously injured in crashes from 2016 through Sept. 1, 2026.
+Analysis of Texas CRIS records for pedalcyclists killed or suspected seriously injured in crashes.
 
-The current reporting window is **2024 through Sept. 1, 2026**. Treat it as one reporting period; 2026 is included through the latest available CRIS date.
+The main reporting window is **2024 through Sept. 1, 2026**. We chose it as a follow-up to the City of San Antonio's Bicycle High Injury Network dashboard:
 
-## Run these notebooks
+[City of San Antonio Bicycle High Injury Network dashboard](https://cosagis.maps.arcgis.com/apps/dashboards/4f93c195971a44d28e6e5b069d673c38)
+
+Treat 2024 through Sept. 1, 2026 as one reporting period. The CRIS export includes 2026 records through the latest available date.
+
+## Notebooks to run
 
 ### 1. Main analysis
 
@@ -12,47 +16,48 @@ The current reporting window is **2024 through Sept. 1, 2026**. Treat it as one 
 
 Run this first. It creates the main story tables:
 
-- annual San Antonio deaths and serious injuries;
-- Texas city comparison rates;
-- bicycle commute comparisons;
+- San Antonio deaths and serious injuries by year;
+- Texas city comparison rates for the current reporting window;
+- bicycle-commute comparisons;
 - Census tract hotspots;
 - City Council district totals;
-- crash commonalities, including helmet status and contributing factors; and
-- official HIN comparison tables.
+- victim characteristics, helmet status and police-recorded contributing factors; and
+- comparison with the City's official HIN corridors.
+
+The notebook uses the Census API for current Texas-city population and bicycle-commute data. It may require a Census API key; enter it in the clearly labeled cell when prompted.
 
 ### 2. Current corridor map
 
 `candidate_corridors_victim_map_no_hin.ipynb`
 
-Run this after the main notebook. It uses the local CRIS and Streets files to identify repeat-crash roadway stretches from 2024 through Sept. 1, 2026.
+Run this after the main analysis. It uses the local CRIS and Streets files to identify repeat-crash roadway stretches from 2024 through Sept. 1, 2026.
 
-It does **not** call the official HIN API. It creates:
+It does **not** call or filter against the City's official HIN API. It creates:
 
 - `outputs/candidate_corridors_2024_2026.csv`
 - `outputs/candidate_corridors_victim_map_2024_2026.html`
 
-The HTML map includes street context, highlighted candidate corridors, clickable crash points, deaths versus serious injuries, victim age/gender, helmet status, contributing factors and coordinates. These are exploratory candidate corridors, not an official City ranking.
+The HTML map includes street context, highlighted candidate corridors, clickable crash points, deaths versus serious injuries, victim age and gender, helmet status, police-recorded contributing factors and coordinates.
 
-### 3. Historical City HIN comparison
+These are exploratory candidate corridors, not an official City ranking.
 
-`recreate_bicycle_hin_method.ipynb`
-
-Use this only to compare the City's earlier High Injury Network analysis with the current period. It is separate from the current corridor map.
-
-### 4. Datawrapper charts
+### Legacy notebook — ignore for current work
 
 `publish_datawrapper_charts.ipynb`
 
-Run after the main notebook. It creates and publishes the three chart datasets/charts using a Datawrapper API token entered locally. The token is not stored in the notebook.
+This was used to initiate the Datawrapper charts. The new charts have different titles and subtitles. It is not part of the current run order.
 
 ## Data files
 
-### Raw inputs
+### Required raw inputs
 
-- `data/raw/myexport_final.csv` — TxDOT CRIS export.
-- `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry` — saved CRIS query.
+- `data/raw/myexport_final.csv` — TxDOT CRIS export used by both analysis notebooks.
 - `data/raw/Streets.zip` — San Antonio street centerline layer used by the corridor map.
-- `data/population_estimates.csv` — population denominators used by the analysis.
+- `data/population_estimates.csv` — historical San Antonio population denominators used for longer-term annual rates.
+
+### Reference file
+
+- `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry` — saved CRIS query used to create the export. It is retained for documentation but is not required to rerun the notebooks.
 
 ### Main output tables
 
@@ -65,12 +70,14 @@ Run after the main notebook. It creates and publishes the three chart datasets/c
 - `outputs/census_tract_hotspots.csv` — Census tract totals.
 - `outputs/intersection_hotspots.csv` — intersection-area totals.
 - `outputs/council_districts.csv` — City Council district totals.
+- `outputs/official_bicycle_hin_2019_2023.csv` and `outputs/official_bicycle_hin_2024_2026.csv` — official HIN corridor comparisons.
+- `outputs/candidate_corridors_2024_2026.csv` — current exploratory repeat-crash corridors, created by the corridor-map notebook.
 
 ### Datawrapper-ready tables
 
 - `outputs/datawrapper_sa_annual_trend.csv` — San Antonio annual trend.
 - `outputs/datawrapper_top10_city_rates.csv` — comparison chart data.
-- `outputs/datawrapper_bike_commute_vs_death_rate.csv` — commute share and death-rate comparison.
+- `outputs/datawrapper_bike_commute_vs_death_rate.csv` — bike-commute share and death-rate comparison.
 
 ## Definitions
 
@@ -79,7 +86,9 @@ The CRIS export uses person-level filters:
 - `Person Type = 3 - PEDALCYCLIST`
 - `Person Injury Severity = K - FATAL INJURY` **OR** `A - SUSPECTED SERIOUS INJURY`
 
-People are counted for injury and death totals. Crashes are deduplicated by `Crash ID` when the unit of analysis is a crash. “Contributing factors” means factors recorded by police in CRIS; it does not independently establish legal fault or causation.
+People are counted for injury and death totals. Crashes are deduplicated by `Crash ID` when the unit of analysis is a crash.
+
+“Contributing factors” means factors recorded by police in CRIS. They do not independently establish legal fault or causation.
 
 ## Install
 
