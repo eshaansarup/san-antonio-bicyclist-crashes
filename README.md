@@ -6,6 +6,10 @@ Reproducible analysis of Texas CRIS records for pedalcyclists killed or suspecte
 
 Open `san_antonio_bicyclist_crashes.ipynb` in Jupyter or VS Code and run all cells. It produces editor-ready CSV tables and PNG charts in `outputs/`.
 
+## HIN-method recreation
+
+Open `recreate_bicycle_hin_method.ipynb` to independently rank roadway segments using the City's publicly described High Injury Network approach and identify candidate new trouble spots in the 2024–Sept. 1, 2026 reporting window. This is an independent recreation, not the City's official calculation.
+
 The notebook covers:
 
 - San Antonio year-over-year serious injuries and deaths;
