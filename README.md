@@ -6,22 +6,32 @@ Reproducible analysis of Texas CRIS records for pedalcyclists killed or suspecte
 
 Open `san_antonio_bicyclist_crashes.ipynb` in Jupyter or VS Code and run all cells. It produces editor-ready CSV tables and PNG charts in `outputs/`.
 
-## HIN-method recreation
-
-Open `recreate_bicycle_hin_method.ipynb` to independently rank roadway segments using the City's publicly described High Injury Network approach and identify candidate new trouble spots in the 2024–Sept. 1, 2026 reporting window. This is an independent recreation, not the City's official calculation.
-
-The notebook covers:
+It covers:
 
 - San Antonio year-over-year serious injuries and deaths;
-- comparison with Houston, Austin, Dallas, Fort Worth and El Paso;
-- comparison with all Texas places of at least 65,000 residents, using raw counts and rates per 1 million residents; the displayed ranking is limited to places with at least one bicyclist death;
-- ACS bicycle-commute share for each eligible place, plus three chart-ready CSVs: the San Antonio trend, the top-10 city rate comparison and bike commuting versus death rate;
-- population-adjusted rates for the 2024–Sept. 1, 2026 reporting window, using the average 2024–2025 population because no 2026 estimate is available;
-- Census tract hotspots;
-- San Antonio City Council districts; and
-- the City of San Antonio's official bicycle High Injury Network corridors, with separate death and suspected-serious-injury counts for 2019–2023 and 2021–2026;
-- common features of the severe-injury and fatal crashes, including intersection context, helmet status and contributing-factor codes; and
-- a 2024–Sept. 1, 2026 reporting-window update, matching the latest CRIS records.
+- Texas city comparisons for the 2024–Sept. 1, 2026 reporting window;
+- rates per 1 million residents and bike-commute shares;
+- Census tract hotspots and City Council districts;
+- victim characteristics, helmet status and police-recorded contributing factors; and
+- official City bicycle High Injury Network comparisons.
+
+## Current corridor map
+
+Open `candidate_corridors_victim_map_no_hin.ipynb` to create the current-period corridor analysis and clickable map.
+
+This notebook uses all qualifying San Antonio crashes from 2024 through Sept. 1, 2026 and the local Streets layer. It does not call the official HIN API. It identifies repeat-crash roadway stretches using a transparent bounded grouping rule and displays each crash as a clickable point with:
+
+- deaths and serious injuries;
+- victim age and gender;
+- helmet status;
+- police-recorded contributing factors; and
+- road name and coordinates.
+
+These are exploratory candidate corridors, not an official City ranking.
+
+## HIN-method recreation
+
+Open `recreate_bicycle_hin_method.ipynb` only when comparing the City's earlier High Injury Network work with the current period. It is a separate historical comparison and does not drive the current corridor map.
 
 ## Publish charts to Datawrapper
 
@@ -40,14 +50,15 @@ The current reporting window runs through Sept. 1, 2026, matching the latest dat
 
 ## Sources
 
-- TxDOT CRIS export: `data/raw/myexport_final.csv`.
+- TxDOT CRIS export: `data/raw/myexport_final.csv`
 - Saved CRIS query: `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry`
+- San Antonio Streets layer: `data/raw/Streets.zip`
 - Census population estimates: `data/population_estimates.csv`
-- 2024 American Community Survey 1-year population API: used for the Texas places comparison (places with populations of at least 65,000)
+- 2024 American Community Survey 1-year population API: used for the Texas places comparison
 - 2024 American Community Survey table B08301: bicycle commuters (`B08301_018E`) divided by workers (`B08301_001E`)
 - Census TIGER/Line 2020 tract boundaries: downloaded by the notebook
 - City of San Antonio council districts: downloaded by the notebook from the official Open Data SA ArcGIS service
-- City of San Antonio Bicycle High Injury Network corridors: downloaded by the notebook from the official ArcGIS service
+- City of San Antonio Bicycle High Injury Network corridors: used only for the official-HIN comparison notebook
 
 The population file combines the Census Bureau's 2010–2020 intercensal estimates for 2016–2019 with its 2020–2025 estimates for 2020–2025. For the current comparison, the notebook uses the average 2024–2025 population as the denominator because a 2026 estimate is not available. It is a resident-population comparison, not a measure of individual cyclist risk or miles traveled.
 
