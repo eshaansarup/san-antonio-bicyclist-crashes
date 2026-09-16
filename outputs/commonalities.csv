@@ -1,16 +1,16 @@
 topic,category,unit,count,denominator,share
-Intersection context,NON INTERSECTION,crashes,127,264,0.4810606060606061
-Intersection context,INTERSECTION,crashes,73,264,0.2765151515151515
-Intersection context,INTERSECTION RELATED,crashes,49,264,0.1856060606060606
-Intersection context,DRIVEWAY ACCESS,crashes,15,264,0.056818181818181816
-Helmet status,1 - NOT WORN,bicyclists,218,265,0.8226415094339623
-Helmet status,99 - UNKNOWN IF WORN,bicyclists,27,265,0.1018867924528302
-Helmet status,"2 - WORN, DAMAGED",bicyclists,13,265,0.04905660377358491
-Helmet status,"3 - WORN, NOT DAMAGED",bicyclists,4,265,0.01509433962264151
-Helmet status,"4 - WORN, UNK DAMAGE",bicyclists,3,265,0.011320754716981131
-Contributing-factor code,Failed to yield,crashes,36,264,0.13636363636363635
-Contributing-factor code,Driver inattention,crashes,28,264,0.10606060606060606
-Contributing-factor code,Disregard stop sign/light,crashes,20,264,0.07575757575757576
-Contributing-factor code,Speed-related code,crashes,9,264,0.03409090909090909
-Contributing-factor code,Alcohol/intoxication code,crashes,4,264,0.015151515151515152
-Contributing-factor code,Drug code,crashes,3,264,0.011363636363636364
+Intersection context,NON INTERSECTION,crashes,34,82,0.4146341463414634
+Intersection context,INTERSECTION,crashes,24,82,0.2926829268292683
+Intersection context,INTERSECTION RELATED,crashes,17,82,0.2073170731707317
+Intersection context,DRIVEWAY ACCESS,crashes,7,82,0.08536585365853659
+Helmet status,1 - NOT WORN,bicyclists,60,83,0.7228915662650602
+Helmet status,99 - UNKNOWN IF WORN,bicyclists,13,83,0.1566265060240964
+Helmet status,"4 - WORN, UNK DAMAGE",bicyclists,4,83,0.04819277108433735
+Helmet status,"2 - WORN, DAMAGED",bicyclists,3,83,0.03614457831325301
+Helmet status,"3 - WORN, NOT DAMAGED",bicyclists,3,83,0.03614457831325301
+Contributing-factor code,Failed to yield,crashes,12,82,0.14634146341463414
+Contributing-factor code,Driver inattention,crashes,6,82,0.07317073170731707
+Contributing-factor code,Disregard stop sign/light,crashes,5,82,0.06097560975609756
+Contributing-factor code,Speed-related code,crashes,3,82,0.036585365853658534
+Contributing-factor code,Alcohol/intoxication code,crashes,0,82,0.0
+Contributing-factor code,Drug code,crashes,0,82,0.0
