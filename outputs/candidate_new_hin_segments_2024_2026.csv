@@ -1,0 +1,2 @@
+segmentid,road_label,from_street,to_street,road_class,length_miles,crashes,deaths,serious_injuries,severity_score,first_year,last_year,max_match_distance_ft,score_per_mile,candidate_high_injury_segment
+9509,JAVELINA CREEK DR, , , ,0.06525757041794734,79,13,67,465,2024,2026,638719.6220791001,7125.610055996112,True
