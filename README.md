@@ -2,65 +2,84 @@
 
 Reproducible analysis of Texas CRIS records for pedalcyclists killed or suspected seriously injured in crashes from 2016 through Sept. 1, 2026.
 
-## Main notebook
+The current reporting window is **2024 through Sept. 1, 2026**. Treat it as one reporting period; 2026 is included through the latest available CRIS date.
 
-Open `san_antonio_bicyclist_crashes.ipynb` in Jupyter or VS Code and run all cells. It produces editor-ready CSV tables and PNG charts in `outputs/`.
+## Run these notebooks
 
-It covers:
+### 1. Main analysis
 
-- San Antonio year-over-year serious injuries and deaths;
-- Texas city comparisons for the 2024–Sept. 1, 2026 reporting window;
-- rates per 1 million residents and bike-commute shares;
-- Census tract hotspots and City Council districts;
-- victim characteristics, helmet status and police-recorded contributing factors; and
-- official City bicycle High Injury Network comparisons.
+`san_antonio_bicyclist_crashes.ipynb`
 
-## Current corridor map
+Run this first. It creates the main story tables:
 
-Open `candidate_corridors_victim_map_no_hin.ipynb` to create the current-period corridor analysis and clickable map.
+- annual San Antonio deaths and serious injuries;
+- Texas city comparison rates;
+- bicycle commute comparisons;
+- Census tract hotspots;
+- City Council district totals;
+- crash commonalities, including helmet status and contributing factors; and
+- official HIN comparison tables.
 
-This notebook uses all qualifying San Antonio crashes from 2024 through Sept. 1, 2026 and the local Streets layer. It does not call the official HIN API. It identifies repeat-crash roadway stretches using a transparent bounded grouping rule and displays each crash as a clickable point with:
+### 2. Current corridor map
 
-- deaths and serious injuries;
-- victim age and gender;
-- helmet status;
-- police-recorded contributing factors; and
-- road name and coordinates.
+`candidate_corridors_victim_map_no_hin.ipynb`
 
-These are exploratory candidate corridors, not an official City ranking.
+Run this after the main notebook. It uses the local CRIS and Streets files to identify repeat-crash roadway stretches from 2024 through Sept. 1, 2026.
 
-## HIN-method recreation
+It does **not** call the official HIN API. It creates:
 
-Open `recreate_bicycle_hin_method.ipynb` only when comparing the City's earlier High Injury Network work with the current period. It is a separate historical comparison and does not drive the current corridor map.
+- `outputs/candidate_corridors_2024_2026.csv`
+- `outputs/candidate_corridors_victim_map_2024_2026.html`
 
-## Publish charts to Datawrapper
+The HTML map includes street context, highlighted candidate corridors, clickable crash points, deaths versus serious injuries, victim age/gender, helmet status, contributing factors and coordinates. These are exploratory candidate corridors, not an official City ranking.
 
-Run `publish_datawrapper_charts.ipynb` after running the main analysis notebook. It prompts for a Datawrapper API token, finds the San Antonio folder (or lets you enter its folder ID), creates three charts, publishes them and prints their URLs. The token is not stored in the notebook.
+### 3. Historical City HIN comparison
+
+`recreate_bicycle_hin_method.ipynb`
+
+Use this only to compare the City's earlier High Injury Network analysis with the current period. It is separate from the current corridor map.
+
+### 4. Datawrapper charts
+
+`publish_datawrapper_charts.ipynb`
+
+Run after the main notebook. It creates and publishes the three chart datasets/charts using a Datawrapper API token entered locally. The token is not stored in the notebook.
+
+## Data files
+
+### Raw inputs
+
+- `data/raw/myexport_final.csv` — TxDOT CRIS export.
+- `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry` — saved CRIS query.
+- `data/raw/Streets.zip` — San Antonio street centerline layer used by the corridor map.
+- `data/population_estimates.csv` — population denominators used by the analysis.
+
+### Main output tables
+
+- `outputs/san_antonio_annual.csv` — year-over-year San Antonio deaths and serious injuries.
+- `outputs/commonalities.csv` — victim characteristics, road conditions and crash factors.
+- `outputs/driver_factors_outcomes_2024_2026.csv` — contributing factors with deaths and serious injuries.
+- `outputs/city_comparison.csv` — large-city comparison.
+- `outputs/texas_cities_comparison_2024_2026.csv` — Texas places with at least 65,000 residents.
+- `outputs/texas_cities_with_death_comparison_2024_2026.csv` — Texas places with at least one bicyclist death.
+- `outputs/census_tract_hotspots.csv` — Census tract totals.
+- `outputs/intersection_hotspots.csv` — intersection-area totals.
+- `outputs/council_districts.csv` — City Council district totals.
+
+### Datawrapper-ready tables
+
+- `outputs/datawrapper_sa_annual_trend.csv` — San Antonio annual trend.
+- `outputs/datawrapper_top10_city_rates.csv` — comparison chart data.
+- `outputs/datawrapper_bike_commute_vs_death_rate.csv` — commute share and death-rate comparison.
 
 ## Definitions
 
-The CRIS export was built with person-level filters:
+The CRIS export uses person-level filters:
 
 - `Person Type = 3 - PEDALCYCLIST`
 - `Person Injury Severity = K - FATAL INJURY` **OR** `A - SUSPECTED SERIOUS INJURY`
 
-People are counted for injury and death totals. Crashes are deduplicated by `Crash ID` when the unit of analysis is a crash.
-
-The current reporting window runs through Sept. 1, 2026, matching the latest date in the CRIS export.
-
-## Sources
-
-- TxDOT CRIS export: `data/raw/myexport_final.csv`
-- Saved CRIS query: `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry`
-- San Antonio Streets layer: `data/raw/Streets.zip`
-- Census population estimates: `data/population_estimates.csv`
-- 2024 American Community Survey 1-year population API: used for the Texas places comparison
-- 2024 American Community Survey table B08301: bicycle commuters (`B08301_018E`) divided by workers (`B08301_001E`)
-- Census TIGER/Line 2020 tract boundaries: downloaded by the notebook
-- City of San Antonio council districts: downloaded by the notebook from the official Open Data SA ArcGIS service
-- City of San Antonio Bicycle High Injury Network corridors: used only for the official-HIN comparison notebook
-
-The population file combines the Census Bureau's 2010–2020 intercensal estimates for 2016–2019 with its 2020–2025 estimates for 2020–2025. For the current comparison, the notebook uses the average 2024–2025 population as the denominator because a 2026 estimate is not available. It is a resident-population comparison, not a measure of individual cyclist risk or miles traveled.
+People are counted for injury and death totals. Crashes are deduplicated by `Crash ID` when the unit of analysis is a crash. “Contributing factors” means factors recorded by police in CRIS; it does not independently establish legal fault or causation.
 
 ## Install
 
