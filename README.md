@@ -15,7 +15,7 @@ The notebook covers:
 - San Antonio City Council districts; and
 - the City of San Antonio's official bicycle High Injury Network corridors, with separate death and suspected-serious-injury counts for 2019–2023 and 2021–2026;
 - common features of the severe-injury and fatal crashes, including intersection context, helmet status and contributing-factor codes; and
-- 2026 year-to-date results kept separate from full-year results.
+- a 2024–Sept. 1, 2026 reporting-window update, matching the latest CRIS records.
 
 ## Definitions
 
@@ -26,7 +26,7 @@ The CRIS export was built with person-level filters:
 
 People are counted for injury and death totals. Crashes are deduplicated by `Crash ID` when the unit of analysis is a crash.
 
-The 2026 records run through Sept. 1, 2026. They are not treated as a full year.
+The current reporting window runs through Sept. 1, 2026, matching the latest date in the CRIS export.
 
 ## Sources
 
