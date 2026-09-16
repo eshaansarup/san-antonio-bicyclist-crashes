@@ -14,7 +14,7 @@ The notebook covers:
 
 - San Antonio year-over-year serious injuries and deaths;
 - comparison with Houston, Austin, Dallas, Fort Worth and El Paso;
-- comparison with the 20 largest Texas cities, using raw counts and rates per 1 million residents;
+- comparison with all Texas places of at least 65,000 residents, using raw counts and rates per 1 million residents; the displayed ranking is limited to places with at least one bicyclist death;
 - population-adjusted rates for the 2024–Sept. 1, 2026 reporting window, using the average 2024–2025 population because no 2026 estimate is available;
 - Census tract hotspots;
 - San Antonio City Council districts; and
@@ -38,6 +38,7 @@ The current reporting window runs through Sept. 1, 2026, matching the latest dat
 - TxDOT CRIS export: `data/raw/myexport_final.csv`.
 - Saved CRIS query: `data/raw/ALL_Pedalcyclist_Fatal_Injury_Crashes.qry`
 - Census population estimates: `data/population_estimates.csv`
+- 2024 American Community Survey 1-year population API: used for the Texas places comparison (places with populations of at least 65,000)
 - Census TIGER/Line 2020 tract boundaries: downloaded by the notebook
 - City of San Antonio council districts: downloaded by the notebook from the official Open Data SA ArcGIS service
 - City of San Antonio Bicycle High Injury Network corridors: downloaded by the notebook from the official ArcGIS service
