@@ -9,4 +9,3 @@ osmnx>=2.0
 scikit-learn>=1.4
 folium>=0.15
 jupyter>=1.0
-
