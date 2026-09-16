@@ -14,7 +14,7 @@ The notebook covers:
 
 - San Antonio year-over-year serious injuries and deaths;
 - comparison with Houston, Austin, Dallas, Fort Worth and El Paso;
-- population-adjusted rates using the average annual population for 2016–2025;
+- population-adjusted rates for the 2024–Sept. 1, 2026 reporting window, using the average 2024–2025 population because no 2026 estimate is available;
 - Census tract hotspots;
 - San Antonio City Council districts; and
 - the City of San Antonio's official bicycle High Injury Network corridors, with separate death and suspected-serious-injury counts for 2019–2023 and 2021–2026;
@@ -41,7 +41,7 @@ The current reporting window runs through Sept. 1, 2026, matching the latest dat
 - City of San Antonio council districts: downloaded by the notebook from the official Open Data SA ArcGIS service
 - City of San Antonio Bicycle High Injury Network corridors: downloaded by the notebook from the official ArcGIS service
 
-The population file combines the Census Bureau's 2010–2020 intercensal estimates for 2016–2019 with its 2020–2025 estimates for 2020–2025. The notebook labels this choice and uses the average of those annual estimates as the denominator. It is a resident-population comparison, not a measure of individual cyclist risk or miles traveled.
+The population file combines the Census Bureau's 2010–2020 intercensal estimates for 2016–2019 with its 2020–2025 estimates for 2020–2025. For the current comparison, the notebook uses the average 2024–2025 population as the denominator because a 2026 estimate is not available. It is a resident-population comparison, not a measure of individual cyclist risk or miles traveled.
 
 ## Install
 
